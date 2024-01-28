@@ -1,0 +1,392 @@
+@font-face{
+  font-family: "Pokemon PixelArt";
+  src: url('fonts/Pokemon_Pixel_Font_Regular/pokemon_pixel_font.woff') format('woff');
+}
+
+body{
+  overflow: hidden;
+}
+
+
+header{
+  margin-top: 0%;
+  padding: 5%;
+  font-family: "Pokemon PixelArt";
+  font-size: 36px;
+}
+
+.headerTitle{
+  font-weight: bold;
+  font-size: 36px;
+  padding-left: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.pokemonLogo {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%; 
+  height: auto; 
+}
+
+.maleTrainer {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 170%; 
+  right: 100%; 
+  animation: bounce 1s infinite; 
+}
+
+.pikachu {
+  display: flex;
+  position: absolute;
+  top: 240%;
+  right: 130%;
+  width:100px;
+  height: 100px;
+  transform: scaleX(-1);
+  animation: bounce 1s infinite; 
+  /* border: solid; */
+}
+
+
+.femaleTrainer{
+  display: flex;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 480%;
+  top: 233%;
+  background-size: cover;
+  animation: bounce 1s infinite;
+}
+
+.bulbasaur{
+  display: flex;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 500%;
+  top: 218%;
+  z-index: 1;
+  animation: bounce 1s infinite;
+}
+
+.trainerPixelContainer {
+  position: absolute;
+  left: 22%;
+  top: 25%;
+  height: 300px;
+  width: 300px;
+}
+
+.flying-pokemon{
+  position: absolute;
+  right: 5%;
+  bottom: 35%;
+  width: 8%;
+  animation: bounce 1s infinite
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Bounce height */
+  }
+  40% {
+    transform: translateY(-30px); /* Bounce height - adjust as needed */
+  }
+  60% {
+    transform: translateY(-15px); /* Bounce height - adjust as needed */
+  }
+}
+
+
+#pokemonContainer{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 50%; 
+  left: 25%;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  font-family: "Pokemon PixelArt"
+}
+
+.displayPokemon{
+  position: absolute;
+  justify-content: center;
+  border: solid;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow:30px -30px 60px #12a5df;
+  top: 0%;
+  left: 40%;
+  padding: 23%;
+  height: 350px;
+  width: 350px;
+}
+
+#pokeName{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 20px;
+  left: 180%;
+  bottom: 73%;
+  /* border: solid; */
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  font-size: 50px;
+  
+}
+
+#pokeType {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 20px;
+  left: 180%;
+  top: 30%;
+  /* border: solid; */
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  font-size: 50px;
+  
+}
+
+.wallpaper {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+
+#buttonContainer {
+  /* border: solid; */
+  position: absolute;
+  width: 150%;
+  left: 195%;
+  top: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#buttonContainer button {
+  margin-right: 30px;
+}
+
+#showPokemonBtn
+{
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #747264;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 24px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+
+#hidePokemonBtn {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #747264;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 24px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ button:hover {
+  color: #e8e8e8;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
+
+
+ #searchBar {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  top: 35%;
+  right: 40%;
+  width: 100%;
+  max-width: 20%;
+  height: 70px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  font-family: "Pokemon PixelArt"
+}
+
+#searchBar:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+#searchBar:active {
+  transform: scale(0.95);
+}
+
+#searchBar:focus {
+  border: 2px solid grey;
+}
+
+
+ @media screen and (max-width:1024px) and (min-height:423px){ 
+  
+  header{
+    font-size: 18px;
+    padding: 2.5%;
+  }
+
+  .wallpaper{
+    height: 150vh;
+  }
+
+  .headerTitle{
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .logoContainer{
+    top: 45%;
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  #searchBar{
+    top: 60%;
+    font-size: 1rem;
+    height: 50px;
+    width: 300px;
+  }
+
+  .maleTrainer{
+    width: 250px;
+    height: 250px;
+    top: 140%;
+  }
+
+  .pikachu{
+    width: 50px;
+    height: 50px;
+    top:175%;
+    right: 115%;
+  }
+
+
+  .bulbasaur{
+    width: 150px;
+    height: 150px;
+    top: 160%;
+    left: 220%;
+    /* border: solid; */
+  }
+
+  .femaleTrainer{
+    top: 170%;
+    left: 210%;
+    width: 70px;
+    height: 70px;
+  }
+  
+
+  .displayPokemon{
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    left: -10%;
+    top: 40%;
+  }
+
+  #pokeName{
+    left : 50%;
+    top: 40%;
+    font-size: 30px;
+  }
+
+  #pokeType{
+    left: 50%;
+    top: 65%;
+    font-size: 30px;
+  }
+
+  #buttonContainer{
+    left: 75%;
+    top: 90%;
+  }
+
+  #showPokemonBtn{
+    font-size: 12px;
+    left: 15%;
+  }
+
+  #hidePokemonBtn{
+    font-size: 12px;
+    right: 20%;
+  }
+
+  .flying-pokemon{
+   top:100%
+  }
+
+
+}
+
+

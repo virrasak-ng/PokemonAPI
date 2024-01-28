@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <title>Pokemon Finder!</title>
+  </head>
+  <body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none p-10">
+        <img
+          class="pokeball"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEPElEQVR4nO1W3WscVRQ/VCvaV+tbFUHy4mvxi8xtqkKFYmwtakobabOrkRRqK1IQ/4H2SUSQKj71sdHok0VQFLRN0CrdTfZjdnfufM/u7NYo2qQlpd0j525npfno7NyZ3c3D/uBHJjN3z/n9zj33A2CAAQaIDXwd7sNd8Bwq8CEqMIMM8sjgL2Rw8w7pOSe+0ZhheBYBtvRfOINHkcEZZOAiA4xEBRxU4DSOwI7eC1fgEWTwOTJYiSx8LVdQgbM4Att7I34XHEIGiwkIXz0jf6ICB7snfCdsRQW+SFw4W2PkM8qVtPhtyOBC18WztolvKWdS4rf2VDxr83t8Eh6Ib6AXbcM2nImz8cQzONw38azNMTnxL8LDqMDVTWBgUWqLvbPP4ybhp9HEj8COhA6ppLiCw/BYlOqf2QSi8S4qcLoz8QBbxD2l34LZGrp0aQw3QLfKGIluvvAQnn9vAlOTU7h735ggPU+fPCq+xTTxdLgBuu5KJmi8+jiOpybxmZf2rcs30++IMTEMfNBJ/38tW/lA/Cvjafzxl1lcvn5d8KdLc/hG+ljbRIyZ+LITAzmZ4NQ2gfh//r2Gq0HvRg+nxJjpk0fkDCgw34kBqavyxNtTQhxVnnDx18v48qGUED372x/i3Q8/XxRj0pPHZA1cDTWg7BndsIfvxd37x8RfahlCUO1gVghLy8vi/+f3H5TKoewZxVADw3sPdM3AtaWWAdqZZHIM7z0QbsCq+n+7fgOj8ujx90USWrAEahsyQeLnLrdaiNqLxqTePRU5vus30Kr6i6EGDLemyQQ/d35GiKPdZqNF/FqqtU7OTc9IGTC8WjnUgGa5c1LV8Wo4PnVCCKTK04KlnidS5QPxNMaqVqUMaLZ3KdRAUbe+kQlOzJcqbRPrkb7RGJnYjt/Agm59FWqgwM23dEeuQq0+rYoWoT6nhU1Mnzgl3slW3vUbSJoKunsk1AAi3l/QzSXZRN1igZtLpA06QV7T54wYs5A0dbeKeW7OQqdQuf3UfJk37Vq97+KdWh2zZd4sWtbOjg20ZsHIF3Sr7wYK3MKcbmYjiW8ZcIYyqtYsmXbfxKuGjZkSv61pzhDIoMCtT66oGhYNG92etlMdVd1GkVszP5IS354JbuQpUE4z6Cjvuniz6otcIic3w6/PYTAM48GFsuFTQGLJdLAbi9uu1UXsIM9CRa9TbkgCquptX6jojSB4hqZWt1F3azFbqy5iULtQzCB+TjN8yglJ4nfP20Y7U5AkYLbE6ZAR1eOOh6ZXQ7vqi+2PBBLpmd7RN83xxFj6TabE74oVtE1ilV8PqmF/TDvD6sRxmSnx27EXbKfIa9pQjpsLSYnP6Wa2XK4/Ab0GnY507cio/Fbkiqv8Fl0PIp+w3QBdsoqGPZHn5nc5zXSyZX7jilpp/i+40pwv8Rv0rahbF+hW2fHFbIABBoB74T9eW5g6iGwi1wAAAABJRU5ErkJggg==" />
+        <span class="headerTitle">Pokemon Finder</span>
+      </a>
+
+      <div class="homeAndAbout">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="logoContainer">
+      <img
+        class="pokemonLogo"
+        src="./assets/Pokemon logo.png"
+        alt="pokemonLogo" />
+    </div>
+
+    <div class="trainerPixelContainer">
+      <img
+        class="maleTrainer"
+        src="./assets/trainer pixel art.png"
+        alt="trainer" />
+      <div>
+        <img
+          class="pikachu"
+          src="./assets/pikachu_pixel_art-removebg-preview.png"
+          alt="pikachu" />
+      </div>
+      <div>
+        <img
+          class="femaleTrainer"
+          src="./assets/may_trainer_pixel_art-removebg-preview.png"
+          alt="may" />
+      </div>
+      <div>
+        <img
+          class="bulbasaur"
+          src="./assets/bulbasaur pixel art.jpg"
+          alt="bulbasaur" />
+      </div>
+    </div>
+
+    <div>
+      <img
+        class="flying-pokemon"
+        src="./assets/flying-pokemon.png"
+        alt="flying-pokemon" />
+    </div>
+
+    <div id="bottomContainer">
+      <div>
+        <img
+          class="wallpaper"
+          src="./assets/sky.jpeg"
+          alt="wallpaper" />
+      </div>
+
+      <form id="searchForm">
+        <div id="searchBarContainer">
+          <input
+            placeholder="Search Pokemon..."
+            type="text"
+            id="searchBar" />
+        </div>
+      </form>
+      <div id="pokemonContainer">
+        <div class="displayPokemon"></div>
+        <div id="pokeName"></div>
+        <div id="pokeType"></div>
+        <div id="buttonContainer">
+          <button
+            id="showPokemonBtn"
+            type="button">
+            Random Pokemon!
+          </button>
+          <button
+            id="hidePokemonBtn"
+            type="button">
+            Hide Pokemon!
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
